@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { sharedfeatureclient } from '../config/featureservices';
+// import { sharedfeatureclient } from '../config/featureservices';
 
 @Component({
   selector: 'app-admin',
@@ -14,7 +14,7 @@ export class AdminComponent implements OnInit {
   public featurescomponent:any;
 
   ngOnInit() {
-    this.featurescomponent = sharedfeatureclient;
+//     this.featurescomponent = sharedfeatureclient;
   }
   navigate(){
     this.router.navigate(['usermanagement']);
