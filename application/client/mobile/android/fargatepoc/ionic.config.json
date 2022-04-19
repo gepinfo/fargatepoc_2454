@@ -1,0 +1,7 @@
+{
+  "name": "fargatepoc",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

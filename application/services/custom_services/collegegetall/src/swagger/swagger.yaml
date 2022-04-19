@@ -1,0 +1,45 @@
+---
+openapi: 3.0.0
+info:
+   version: 1.3.0
+   title: fargatepoc open api specification
+   description: collegegetall API
+   termsOfService: http://api_url/terms/
+   contact:
+      name: ContactName
+      email: hello@wolox.co
+      url: https://www.wolox.com.ar/
+   license:
+      name: Apache 2.0
+      url: https://www.apache.org/licenses/LICENSE-2.0.html
+servers:
+   - url: http://localhost:8014
+     description: collegegetall
+tags:
+- name: collegedetails
+paths:
+   "/collegedetails":
+      get:
+         tags:
+         -  collegedetails
+         description: GpGetAllValues
+         responses:
+            200:
+               description: Success
+            400:
+               description: Bad Request
+            404:
+               description: Not Found
+            500:
+               description: Internal Server Error
+components:
+   schemas:
+      collegedetails:
+         type: object
+         properties:
+            name:
+               type: "string"
+               description: Description
+            email:
+               type: "string"
+               description: Description
